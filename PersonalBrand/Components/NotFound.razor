@@ -1,0 +1,16 @@
+﻿@inject NavigationManager NavigationManager;
+
+<PageTitle>Not found</PageTitle>
+
+<div class="center-align">
+    <h1>404</h1>
+    <div>OOPS! Nothing was found</div>
+    <div class="link" @onclick=ReturnToHome>Return to home page.</div>
+</div>
+
+@code {
+    public void ReturnToHome()
+    {
+        NavigationManager.NavigateTo(NavigationManager.BaseUri);
+    }
+}
