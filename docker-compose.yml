@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   personalbrand:
-    container_name: personalbrand
+    container_name: personalbrand-app
     image: ${DOCKER_REGISTRY-}personalbrand
     build:
       context: .

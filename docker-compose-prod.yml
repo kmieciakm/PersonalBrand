@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  tunnel:
+    container_name: personalbrand-tunnel
+    image: cloudflare/cloudflared
+    restart: unless-stopped
+    command: tunnel run
+    networks:
+      - personalbrand-network
+    environment:
+      - TUNNEL_TOKEN=${TUNNEL_TOKEN}
