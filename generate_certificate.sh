@@ -5,4 +5,3 @@ source ./.env
 set +a
 
 dotnet dev-certs https -ep ${APPDATA}/ASP.NET/Https/${CERTIFICATE} -p ${CERTIFICATE_PASSWORD}
-dotnet dev-certs https --trust
